@@ -2,7 +2,7 @@
 
 非官方工具，维护者为 [JinhuiChan](https://github.com/JinhuiChan)，使用 OpenAI Codex 协助完成。
 
-本仓库不提供游戏 HTML、游戏源码整包、预生成贴图、截图素材或在线试玩，也不会自动下载游戏。它只处理使用者自行提供、有权使用的本地原文件。工具和 MIT 许可证不构成原游戏的修改、再分发或商业使用授权。
+本 Git 仓库不直接托管游戏 HTML、游戏源码整包、预生成贴图、截图素材或在线试玩，工具也不会自动下载游戏。下方网盘为维护者提供的外部分享；工具本身只处理使用者自行提供、有权使用的本地原文件。工具和 MIT 许可证不构成原游戏的修改、再分发或商业使用授权。
 
 ## 原作与出处
 
@@ -12,7 +12,7 @@ Saltline 原作实验由 **Felix Rieseberg** 发起，使用 Claude Fable 5.2 �
 - [原始 Claude Artifact](https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp)
 - [参考镜像与来源说明](https://github.com/realcodebear/saltline-fable-5.2)
 
-本工具不声称原作是本仓库作者自主开发的作品，也不代表 Felix Rieseberg 或 Anthropic。核验记录见 [CREDITS.md](CREDITS.md)，许可范围见 [LICENSING.md](LICENSING.md)。截至 2026-11-13，未在核查的本地原文件和来源镜像中找到游戏本体的明确再分发许可，因此不随仓库发布游戏及其衍生资源。
+本工具不声称原作是本仓库作者自主开发的作品，也不代表 Felix Rieseberg 或 Anthropic。核验记录见 [CREDITS.md](CREDITS.md)，许可范围见 [LICENSING.md](LICENSING.md)。截至 2026-11-13，未在核查的本地原文件和来源镜像中找到游戏本体的明确再分发许可，本 Git 仓库不直接托管游戏及其衍生资源。
 
 ## 功能
 
@@ -22,6 +22,25 @@ Saltline 原作实验由 **Felix Rieseberg** 发起，使用 Claude Fable 5.2 �
 - 最终画布与场景共用渲染缩放，避免高 DPI 输出绕过像素预算。
 - 可选：在本机生成 512 基准纹理缓存，将复杂程序化材质计算移到一次性的本地准备阶段。Ultra 与显式 `tex` 参数仍走原程序化路径。
 - 输出携带原作出处与内嵌 Three.js r180 的 MIT 声明；拒绝覆盖输入原文件。
+
+## 网盘分享
+
+通过网盘分享的文件：**Saltline**
+
+- 链接：[百度网盘 · Saltline](https://pan.baidu.com/s/1zX7mMOk2HgqDDb8kVGv5uw?pwd=5c42)
+- 提取码：`5c42`
+
+分享中包含以下三个文件（文件名和大小以网盘页面为准）：
+
+| 文件名 | 版本说明 | 页面显示大小 |
+| --- | --- | --- |
+| `使用Fable5.2自主研发的国产几把猫FPS.html` | **简体中文汉化＋性能优化版**：已汉化菜单、设置、操作提示、任务对白和结算，并加入启动与渲染优化。想直接玩中文版可选择此文件。 | 约 8.52 MB |
+| `optimized-en.html` | **英文性能优化版**：保留英文界面，加入材质缓存、字体非阻塞加载和高分屏渲染优化。 | 约 8.52 MB |
+| `original.html` | **英文原版**：保留原始游戏构建，可供对照，也可作为下方工具的输入文件。 | 约 1.36 MB |
+
+下载想使用的 HTML 后，可用 Microsoft Edge 或 Google Chrome 打开。下载前两种成品版本后，无需再运行下方的 Python / Node.js 构建命令；下方步骤用于自行从原版生成汉化或优化版本。
+
+文件名沿用分享中的名称，原作出处仍为上文所列的 Saltline。外部分享链接不改变原作及第三方依赖的许可范围，详见 [许可说明](LICENSING.md)。
 
 ## 使用
 
