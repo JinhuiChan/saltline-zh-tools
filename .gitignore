@@ -1,0 +1,14 @@
+local/
+backup/
+node_modules/
+__pycache__/
+*.pyc
+*.html
+*.png
+*.jpg
+*.webp
+*textures*.json
+*cache*.json
+*.zip
+.DS_Store
+Thumbs.db

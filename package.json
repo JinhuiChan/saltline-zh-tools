@@ -1,0 +1,12 @@
+{
+  "name": "saltline-zh-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial local-only Saltline Chinese localization and performance tools; game not included",
+  "license": "MIT",
+  "scripts": {
+    "test": "python -m unittest discover -s tests -v"
+  },
+  "engines": {"node": ">=20"},
+  "devDependencies": {"playwright-core": "1.65.0"}
+}
